@@ -135,6 +135,11 @@ public class Mino : MonoBehaviour
             int roundY = Mathf.RoundToInt(children.transform.position.y);
 
             grid[roundX, roundY] = children;
+
+            if (roundY >= height - 1)
+            {
+                //FindObjectOfType<GameManagement>().GameOver;
+            }
         }
     }
 
